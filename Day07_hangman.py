@@ -1,23 +1,15 @@
 from random import choice
-from os import system, name
 from time import sleep
-from Day07_hangman_art import logo, stages
-# define clear terminal function
-def clear():
-    # for windows
-    if name == 'nt':
-        _ = system('cls')
-
-    # for mac and linux
-    else:
-        _ = system('clear')
+from ascii_art import hangman_logo, hangman_lives
+from functions import clear
 
 # refresh the screen
 def refresh():
     clear()
     print(answer)
-    print(stages[lives])
+    print(hangman_lives[lives])
     print(display)
+
 # import words list
 with open("words.txt") as words_file:
     words = words_file.read().split("\n")
@@ -25,7 +17,7 @@ with open("words.txt") as words_file:
 
 # Clear display and show logo
 clear()
-print(logo)
+print(hangman_logo)
 sleep(3)
 
 # Set game variables

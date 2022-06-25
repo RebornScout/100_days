@@ -1,8 +1,8 @@
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-from Day08_caesar_art import logo
+from ascii_art import caesar_logo
 
 
-print(logo)
+print(caesar_logo)
 def caesar(text, shift, direction):
     result = ""
     if direction == "decode":

@@ -40,8 +40,7 @@ def eleven_to_one(hand):
     return hand
 
 def deal_card():
-    card_index = random.randint(0, 12)
-    card = cards[card_index]
+    card = random.choice(cards)
     return card
 
 def play():
@@ -84,7 +83,7 @@ def play():
     print(f"Computer's cards are {computer_cards} score {sum(computer_cards)}")
     find_winner(player_cards, computer_cards)
 
-    play_again = input("Play again? y or n")
+    play_again = input("Play again? y or n ")
     if play_again == "y":
         play()
 

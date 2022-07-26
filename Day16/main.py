@@ -1,6 +1,6 @@
-from Day16_menu import Menu, MenuItem
-from Day16_coffee_maker import CoffeeMaker
-from Day16_money_machine import MoneyMachine
+from menu import Menu, MenuItem
+from coffee_maker import CoffeeMaker
+from money_machine import MoneyMachine
 
 menu = Menu()
 coffee_maker = CoffeeMaker()

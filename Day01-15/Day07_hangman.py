@@ -11,7 +11,7 @@ def refresh():
     print(display)
 
 # import words list
-with open("words.txt") as words_file:
+with open("../words.txt") as words_file:
     words = words_file.read().split("\n")
     word_list = [word.strip('"').lower() for word in words if len(word) > 5]
 
